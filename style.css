@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.textcontainer{
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    display: grid;
+    place-items: center;
+}
+h3{
+    font-size: 1.4em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.textcontainer .textlist ul {
+    display: flex;
+}
+.textcontainer .textlist ul li {
+    font-size:3em;
+    color: white;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    animation: liactive 3s infinite;
+
+}
+
+.textcontainer .textlist ul li.active{
+    font-size: 15em;
+    transform: rotate(90deg);
+    color: #f1c40f;
+    transition: all 0.4s ease-in-out;
+}
